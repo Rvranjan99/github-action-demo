@@ -6,7 +6,7 @@ on:
       payload:
         description: "snow payload"
         required: true
-        default: ""
+        default: '{}'
       input1: 
         description: "test"
         required: false
