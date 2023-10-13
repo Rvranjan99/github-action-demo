@@ -2,8 +2,8 @@ name: Test Action
 on:
   workflow_dispatch:
   repository_dispatch:
-    type:
-      - webhook
+    types: [dependency_update]
+      
 jobs:
   hello:
     runs-on: ubantu-latest
