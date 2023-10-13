@@ -1,7 +1,7 @@
 name: Test Action
 on:
   workflow_dispatch:
-  repository_dispatch:
+  
     inputs:
       payload:
         description: "snow payload"
