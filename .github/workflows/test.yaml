@@ -2,12 +2,15 @@ name: Test Action
 on:
   workflow_dispatch:
   repository_dispatch:
-    types: 
-      - webhook
     inputs:
       payload:
         description: "snow payload"
-        default: {}
+        required: true
+        default: ""
+      input1: 
+        description: "test"
+        required: false
+        default: "input1"
     
       
 jobs:
