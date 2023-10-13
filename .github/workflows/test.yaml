@@ -4,6 +4,11 @@ on:
   repository_dispatch:
     types: 
       - webhook
+    inputs:
+      payload:
+        description: "snow payload"
+        default: {}
+    
       
 jobs:
   hello:
