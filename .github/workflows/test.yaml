@@ -36,8 +36,11 @@ jobs:
         
    
           
-      - name: install jq
-        run: winget install jqlang.jq
+     # - name: install jq
+     #  run: winget install jqlang.jq
+      - name: Install jq
+        uses: dcarbone/install-jq-action@v2.0.2
+            
       - name: Process Webhook
         id: webhook 
         run: |
