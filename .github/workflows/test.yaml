@@ -22,6 +22,8 @@ jobs:
       - name: hello
         run: echo "hello world!"
         shell: bash
+      - name: install jq
+        run: chocolatey install jq
       - name: Process Webhook
         id: webhook 
         run: |
