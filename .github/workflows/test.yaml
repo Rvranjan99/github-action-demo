@@ -27,6 +27,9 @@ jobs:
         run: |
           input_data=${{github.event.inputs.payload}}
           parsed_data=$(echo $input_data | jq -r .)
+          key_value=$(echo $parsed_data | jq -r .key)
           
           
-          echo 'Payload - $parsed_data'
+          
+          
+          echo 'Payload - $key_value'
