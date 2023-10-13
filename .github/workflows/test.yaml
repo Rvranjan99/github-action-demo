@@ -1,12 +1,10 @@
 name: Test Action
 on:
-  push:
-    branch: main
   workflow_dispatch:
 jobs:
   hello:
-    runs-on: ubantu/latest
+    runs-on: ubantu-latest
     steps:
-      -name: hello
-      run: echo "Hello world"
-      shell: bash
+      - name: hello
+        run: echo "Hello world"
+        shell: bash
