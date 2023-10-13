@@ -24,4 +24,4 @@ jobs:
         shell: bash
       - name: Process Webhook
         id: webhook 
-        run: echo 'Payload - ${{toJSON(github.event)}}'
+        run: echo 'Payload - ${{toJSON(github.event.inputs.payload)}}'
