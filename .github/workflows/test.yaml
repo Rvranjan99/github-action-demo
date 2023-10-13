@@ -24,4 +24,9 @@ jobs:
         shell: bash
       - name: Process Webhook
         id: webhook 
-        run: echo 'Payload - ${{toJSON(github.event.inputs.payload)}}'
+        run: |
+          input_data=${{github.event.inputs.payload}}
+          parsed_data=$(echo $input_data | jq -r .)
+          
+          
+          echo 'Payload - $parsed_data'
