@@ -12,5 +12,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2.3.1
       - name: hello
-        run: echo "Hello world"
+        run: echo "hello world!"
         shell: bash
+      - name: Process Webhook
+        id: webhook 
+        run: echo 'Payload - ${{github.event.inputs.payload}}'
