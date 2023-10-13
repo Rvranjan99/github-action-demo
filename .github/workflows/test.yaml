@@ -23,7 +23,7 @@ jobs:
         run: echo "hello world!"
         shell: bash
       - name: install jq
-        run: chocolatey install jq
+        run: winget install jqlang.jq
       - name: Process Webhook
         id: webhook 
         run: |
