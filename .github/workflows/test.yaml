@@ -26,8 +26,7 @@ jobs:
         id: webhook 
         run: |
           input_data=${{ toJSON(github.event.inputs.payload)}}
-          parsed_data=$(echo $input_data | jq -r .)
-          key_value=$(echo $parsed_data | jq -r .key)
+          key_value=$(echo $input_data | jq -r .key)
           
           
           
