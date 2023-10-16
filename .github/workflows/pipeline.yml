@@ -20,6 +20,8 @@ jobs:
           node-version: 18
       - name: node version
         run: node --version
+      - name: run index.js
+        run: node index.js
       
       
       
