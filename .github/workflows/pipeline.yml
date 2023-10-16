@@ -1,5 +1,6 @@
 name: InfraProvisioningPipeline
-on: repository_dispatch
+on: workflow_dispatch
+# repository_dispatch
 
 jobs:
   test:
