@@ -13,14 +13,19 @@ jobs:
         run: echo "Hello World"
         shell: bash
       - name: payload processing
-        run: echo "${{github.event.client_payload.name}}"
+        run: | 
+          echo ":: set-env
+          name=PAYLOAD::${{toJSON(github.event.client_payload)}}
+          "
+
+      
       - name: Setup Node.js environment
         uses: actions/setup-node@v3.8.1
         with:
           node-version: 18
       - name: node version
         run: node --version
-      - name: run index.js
+      - name: run js file
         run: node index.js
       
       
