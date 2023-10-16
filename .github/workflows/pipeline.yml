@@ -13,7 +13,7 @@ jobs:
         run: echo "Hello World"
         shell: bash
       - name: payload processing
-        run: echo "${{github.events}}"
+        run: echo "${{github.event}}"
       
       
       
