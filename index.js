@@ -1,2 +1,2 @@
 console.log("Hello")
-console.log(JSON.parse(process.env.PAYLOAD))
+console.log(process.env.PAYLOAD)
