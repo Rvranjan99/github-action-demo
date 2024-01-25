@@ -11,6 +11,10 @@ jobs:
           node-version: '18'
       - run: npm install -g bats
       - run: bats -v
+      - name: "expression"
+        env: 
+          X: ${{2}}
+        run: echo "$X"
          
 
           
