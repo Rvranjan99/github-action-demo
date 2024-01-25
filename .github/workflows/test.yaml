@@ -16,8 +16,8 @@ jobs:
       - name: "read file from plan-data folder"
         run: |
           cd ./plan-data
-          plan=$(jq '.[]' plan.json)
-          echo $plan
+          jq '.[]' plan.json
+          jq '.[] | .name' plan.json
 
          
 
