@@ -1,3 +1,6 @@
-{
-"type":"plan"
-}
+[
+    { "name": "Sammy", "type": "shark", "clams": 5 },
+    { "name": "Bubbles", "type": "orca", "clams": 3 },
+    { "name": "Splish", "type": "dolphin", "clams": 2 },
+    { "name": "Splash", "type": "dolphin", "clams": 2 }
+]

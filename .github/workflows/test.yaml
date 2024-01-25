@@ -16,7 +16,7 @@ jobs:
       - name: "read file from plan-data folder"
         run: |
           cd ./plan-data
-          cat $GITHUB_WORKSPACE/sentinel/test.json
+          jq '.' plan.json
 
          
 
