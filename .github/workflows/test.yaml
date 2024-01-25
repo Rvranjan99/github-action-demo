@@ -16,6 +16,10 @@ jobs:
         run: echo "$Greeting $First_Name. Today is $DAY_OF_WEEK!"
         env:
           First_Name: Mona
+      - name: "access env"
+        run: |
+          echo "Day $DAY_OF_WEEK"
+          echo "Name $First_Name"
          
 
           
