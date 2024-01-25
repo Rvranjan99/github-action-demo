@@ -17,7 +17,7 @@ jobs:
       - name: "expression"
         env: 
           X: ${{2}}
-        run: env
+        run: ls
          
 
           
