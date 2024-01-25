@@ -22,7 +22,7 @@ jobs:
           echo "Name $First_Name"
       - name: "Read file"
         run: |
-          cd sentinel
+          cd ./sentinel
           echo "$GITHUB_WORKSPACE"
          
 
