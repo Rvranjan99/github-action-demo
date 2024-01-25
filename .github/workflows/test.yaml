@@ -1,29 +1,16 @@
-name: Greeting on variable day
-
-on:
-  workflow_dispatch
-
-env:
-  DAY_OF_WEEK: Monday
-
+name: learn-github-actions
+run-name: ${{ github.actor }} is learning GitHub Actions
+on: [push]
 jobs:
-  greeting_job:
+  check-bats-version:
     runs-on: ubuntu-latest
-    env:
-      Greeting: Hello
     steps:
-      - name: "Say Hello Mona it's Monday"
-        run: echo "$Greeting $First_Name. Today is $DAY_OF_WEEK!"
-        env:
-          First_Name: Mona
-      - name: "access env"
-        run: |
-          echo "Day $DAY_OF_WEEK"
-          echo "Name $First_Name"
-      - name: "Read file"
-        run: |
-          cd ./sentinel
-          echo "$GITHUB_WORKSPACE"
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+      - run: npm install -g bats
+      - run: bats -v
          
 
           
