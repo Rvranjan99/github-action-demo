@@ -17,7 +17,7 @@ jobs:
         run: |
           cd ./plan-data
           plan=$(jq '.' plan.json)
-          echo plan
+          echo $plan
 
          
 
