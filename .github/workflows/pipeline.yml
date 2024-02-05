@@ -1,7 +1,7 @@
 name: InfraProvisioningPipeline
 on: 
   repository_dispatch:
-    types: webhook
+    types: [webhook]
 
 jobs:
   test:

@@ -1,0 +1,13 @@
+import {getInput,setOutput,setFailed} from '@actions/core'
+import {} from '@actions/github'
+
+try {
+    const nameToGreet=getInput("guest")
+    console.log(`Hello ${nameToGreet}!`)
+    const time=new Date()
+    time=time.toTimeString;
+    setOutput('time',time)
+    
+} catch (error) {
+    setFailed(error.message)
+}

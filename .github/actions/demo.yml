@@ -1,0 +1,13 @@
+name: 'Greet'
+description: 'Greet someone and record the time'
+inputs:
+  guest:
+    description: 'who to greet'
+    required: true
+    default: 'Ravi'
+outputs:
+  time:
+    description: 'The time we greeted you'
+runs:
+  using: 'node20'
+  main: 'index.js'
