@@ -23,10 +23,11 @@ jobs:
       #   id: greet
       #   uses: octocat/.github/action
       - name: folder
+        shell: bash
         run: |
           for dir in folderA/*/*    # list directories in the form "/tmp/dirname/"
           do
-            if [-d "$dir"]; then
+            if [-d "$dir" ]; then
               echo "$dir"
             fi
           done
