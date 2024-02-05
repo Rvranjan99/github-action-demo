@@ -25,7 +25,7 @@ jobs:
       - name: folder
         shell: bash
         run: |
-          for dir in folderA/*/*    # list directories in the form "/tmp/dirname/"
+          for dir in /folderA/*/*    # list directories in the form "/tmp/dirname/"
           do
             
               echo "$dir"
