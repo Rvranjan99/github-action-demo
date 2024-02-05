@@ -27,9 +27,9 @@ jobs:
         run: |
           for dir in folderA/*/*    # list directories in the form "/tmp/dirname/"
           do
-            if [-d "$dir" ]; then
+            
               echo "$dir"
-            fi
+            
           done
 
 
