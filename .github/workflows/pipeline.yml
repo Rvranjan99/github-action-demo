@@ -5,6 +5,7 @@ on:
 
 jobs:
   test:
+    name: custom name
     runs-on: windows-latest
     env: 
       PAYLOAD: ${{toJSON(github.event.client_payload)}}
