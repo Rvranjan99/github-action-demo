@@ -2,7 +2,7 @@ name: InfraProvisioningPipeline
 on: 
   repository_dispatch:
     types: [webhook]
-run-name: Deploy to by @${{ github.actor }}
+run-name: Deploy to by @${{ toJSON(github.event.client_payload).name }}
 
 jobs:
   test:
